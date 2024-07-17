@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\KtvReader">
+      <UniqueIdentifier>{0f857d4a-f4b0-4a01-9b18-4b9e4cc1f26f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Decoder">
+      <UniqueIdentifier>{bb1b81da-9b9e-4c8a-b041-5ff38966e4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\KtvReader">
+      <UniqueIdentifier>{e02d5e8d-c2a8-4a87-ac06-07d8d71b0bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Decoder">
+      <UniqueIdentifier>{5c58f3b8-46e7-4963-93b7-16783e17d4c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\KtvReader\src\ktvReader.c">
+      <Filter>ソース ファイル\KtvReader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\KtvReader\src\libaribb25.cpp">
+      <Filter>ソース ファイル\KtvReader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Decoder\src\arib_std_b25.c">
+      <Filter>ソース ファイル\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Decoder\src\b_cas_card.c">
+      <Filter>ソース ファイル\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Decoder\src\multi2.c">
+      <Filter>ソース ファイル\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Decoder\src\multi2_simd.c">
+      <Filter>ソース ファイル\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Decoder\src\ts_section_parser.c">
+      <Filter>ソース ファイル\Decoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\KtvReader\inc\IB25Decoder.h">
+      <Filter>ヘッダー ファイル\KtvReader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\KtvReader\inc\ktvReader.h">
+      <Filter>ヘッダー ファイル\KtvReader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\KtvReader\inc\libaribb25.h">
+      <Filter>ヘッダー ファイル\KtvReader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\arib_std_b25.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\arib_std_b25_error_code.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\b_cas_card.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\b_cas_card_error_code.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\multi2.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\multi2_error_code.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\multi2_simd.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\portable.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\simd_instruction_type.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\ts_common_types.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\ts_section_parser.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Decoder\inc\ts_section_parser_error_code.h">
+      <Filter>ヘッダー ファイル\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KtvDecoder_B25.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
